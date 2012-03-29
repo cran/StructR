@@ -1,5 +1,5 @@
 FryPLOT <-
-function(fry.data){
+function(fry.data, zoom = 1){
   #Determine plot window parameters#
   x.range <- summary(fry.data$x)
   x.range <- x.range[5]
@@ -9,8 +9,8 @@ function(fry.data){
   #Plot data and estimate apogee#
   x11(xpos=-25, ypos=0)
   plot(fry.data, 
-       xlim = c((-1 * x.range), x.range), 
-       ylim = c((-1 * y.range), y.range), 
+       xlim = c((-1 * x.range) * zoom, x.range * zoom), 
+       ylim = c((-1 * y.range) * zoom, y.range * zoom), 
        asp = 1, ann = FALSE, axes = FALSE, 
        pch = 19, col = "#AAAAAA")
   box()
@@ -20,8 +20,8 @@ function(fry.data){
   
   #Plot data and estimate perigee#
   plot(fry.data, 
-       xlim = c((-1 * x.range), x.range), 
-       ylim = c((-1 * y.range), y.range), 
+       xlim = c((-1 * x.range) * zoom, x.range * zoom), 
+       ylim = c((-1 * y.range) * zoom, y.range * zoom), 
        asp = 1, ann = FALSE, axes = FALSE, 
        pch = 19, col = "#AAAAAA")
   box()

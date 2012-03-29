@@ -46,7 +46,3 @@ Jeffrey R. Webber
 \note{
 For an example run the function with default variables and check the working directory for the output.
 }
-\seealso{
-\code{\link{Att3P}}
-}
-

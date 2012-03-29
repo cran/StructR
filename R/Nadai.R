@@ -4,7 +4,7 @@ function(Lx = 2, Ly = 1, Lz = .5, Plot=TRUE){
   names(axDat)=c("X","Y","Z")
 
   #Calculate Lode's parameter#
-  lodes<-(2*(log(axDat$Y)-log(axDat$X)-log(axDat$Z)))/(log(axDat$X)-log(axDat$Z))
+  lodes<-(2*log(axDat$Y)-log(axDat$X)-log(axDat$Z))/(log(axDat$X)-log(axDat$Z))
 
   #Calculate the octahedral shear strain#
   octSS<-(sqrt((log(axDat$X)-log(axDat$Y))^2+(log(axDat$Y)-log(axDat$Z))^2+(log(axDat$Z)-log(axDat$X))^2)/sqrt(3))

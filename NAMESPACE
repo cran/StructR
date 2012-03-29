@@ -1,0 +1,27 @@
+#StructR 1.1 NAMESPACE#
+# Exports #
+export(
+  ADD2RHR,
+  AppDip,
+  DD2RHR,
+  ElliRead,
+  ElliWrite,
+  Ellipse2D,
+  Ellipse3D,
+  ExDip,
+  Fry3D,
+  FryImg,
+  FryPLOT,
+  Nadai,
+  RFrame,
+  RHR2DD,
+  kmlDPP,
+  lMOD,
+  pMOD
+)
+
+# Imports #
+import(rgl)
+import(misc3d)
+importFrom(png, readPNG)
+importFrom(RFOC, faultplane, focpoint, net)

@@ -50,6 +50,7 @@ Jeffrey R. Webber (modified from code written by Peter Macdonald)
 \code{\link{Ellipse3D}}
 }
 \examples{
+\dontrun{
 rat <- sample(1:5, 5)
 aha <- sqrt(rat)
 bha <- sqrt(1 / rat)
@@ -65,5 +66,6 @@ i <- 0
 while(i < 5){
 	i <- i + 1
 	Ellipse2D(aha[i], bha[i], ang[i], xco[i], yco[i])
+}
 }
 }

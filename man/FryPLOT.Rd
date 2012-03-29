@@ -7,12 +7,15 @@ Fry plot central void selector
 Generates a sectional Fry plot and interactively allows user to fit an ellipse to the central void.
 }
 \usage{
-FryPLOT(fry.data)
+FryPLOT(fry.data, zoom)
 }
 
 \arguments{
   \item{fry.data}{
 A data frame object with two columns named ``x'' and ``y'' containing the Cartesian coordinates of a Fry plot.
+}
+  \item{zoom}{
+Fry plot zoom factor.
 }
 }
 \details{
